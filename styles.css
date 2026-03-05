@@ -9031,7 +9031,39 @@ textarea.form-control-lg {
   border-bottom-left-radius: var(--bs-border-radius-pill) !important;
   border-top-left-radius: var(--bs-border-radius-pill) !important;
 }
+.hero {
+  height: 100vh;
+}
 
+/* image fills screen */
+.hero-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* make slide relative so overlay can position correctly */
+.carousel-item {
+  position: relative;
+}
+
+/* dark overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+/* text above overlay */
+.carousel-caption {
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+}
 .visible {
   visibility: visible !important;
 }
