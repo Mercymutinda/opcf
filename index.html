@@ -1,446 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <title>OPCF</title>
-    <viewport content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/main.scss">
-    <link rel="stylesheet" href="styles.css">
-
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPCF-Africa | Older Persons Care Foundation</title>
+  <meta name="description" content="OPCF-Africa combats violence against elderly persons, establishes rescue centers, and advocates for dignity across Africa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="fixed-top">
-    <div>
 
-        <header >
-            <nav class="navbar navbar-expand-lg navbar-light  bg-dark text-light">
-              <div class="container">
-            
-                <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                  <img src="assets/images/logo.png" alt="OPCF Logo" width="60" height="60"  class="me-2">
-                  <span class="fw-bold text-warning">OPCF</span>
-                </a>
-            
-                <!-- Mobile menu button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <!-- Menu -->
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                  <ul class="navbar-nav ms-auto">
-            
-                    <li class="nav-item">
-                      <a class="nav-link active text-warning" href="#index">Home</a>
-                    </li>
-            
-                    <li class="nav-item">
-                      <a class="nav-link text-warning" href="#about">About</a>
-                    </li>
-            
-                    <li class="nav-item">
-                      <a class="nav-link text-warning" href="#get-involved">Get Involed</a>
-                    </li>
-            
-                    <li class="nav-item">
-                      <a class="nav-link text-warning" href="#contact">Contact Us</a>
-                    </li>
-            
-                  </ul>
-                </div>
-            
-              </div>
-            </nav>
-            </header>
-        
-    </div>
-</header>
+  <!-- NOISE TEXTURE OVERLAY -->
+  <div class="noise-overlay" aria-hidden="true"></div>
 
-<main>
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav__brand">
 
-    <!-- hero section -->
-    <section id="home" class="hero">
-
-      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      
-        <div class="carousel-inner">
-      
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-
-            <img src="assets/images/old.jpg" class="d-block w-100 hero-img" alt="">
-          
-            <!-- Overlay -->
-            <div class="hero-overlay"></div>
-          
-            <!-- Text -->
-            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
-                <h2 class="text-warning">Join Us</h2>
-                <h3 class="text-white "></h3>
-
-                <h1 class="display-1 text-white fw-bold">PARTNERING FOR CHANGE</h1>
-                <p class="text-white"> Refuge for Elderly at Risk</p>
-            </div>
-         
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-item ">
-
-            <img src="assets/images/patient.jpg" class="d-block w-100 hero-img" alt="">
-          
-            <!-- Overlay -->
-            <div class="hero-overlay"></div>
-          
-            <!-- Text -->
-            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
-                <h2 class="text-warning">Care, Research</h2>
-                <h1 class="display-1 text-white fw-bold">
-                  Advocacy & Enterprise
-                </h1>
-                <p class="text-white">Combatting Elder Violence in Africa</p>
-            </div>
-            
-            
-          </div>
-      
-        </div>
-      
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-      
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      
+      <img src="assets/images/logo.png" alt="OPCF Africa Logo" class="nav__logo">
+    
+      <div class="nav__brand-text">
+          <span class="nav__brand-name">
+            OPCF<span class="nav__brand-accent">-Africa</span>
+          </span>
+    
+          <span class="nav__brand-sub">
+            Older Persons Care Foundation
+          </span>
       </div>
-      
-      </section>
-<!-- about section -->
-<section id="about" class="about py-5">
-  <div class="container">
+    
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#objectives">Our Work</a></li>
+      <li><a href="#involve">Get Involved</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#involve" class="nav__cta">Support Us</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <div class="row align-items-center">
-
-      <!-- LEFT CONTENT -->
-      <div class="col-lg-6">
-
-        <h2 class="text-warning mb-4">About OPCF-Africa</h2>
-        <p class="mb-5">
-          To combat violence against elderly persons in Africa through the
-          establishment of rescue centers, research, education, advocacy,
-          entrepreneurial initiatives, and compassionate caregiving.
-        </p>
-
-        <div class="row g-4">
-
-          <!-- Organization -->
-          <div class="col-md-6">
-            <div class="d-flex">
-              <div class="me-3 fs-3 text-warning">
-                <i class="bi bi-building"></i>
-              </div>
-              <div>
-                <h5>Organization</h5>
-                <p class="small text-muted">
-                  Older Persons Care Foundation-Africa (OPCF-Africa) is a
-                  Community Based Organization dedicated to protecting elderly
-                  persons at risk of violence.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mission -->
-          <div class="col-md-6">
-            <div class="d-flex">
-              <div class="me-3 fs-3 text-warning">
-                <i class="bi bi-bullseye"></i>
-              </div>
-              <div>
-                <h5>Our Mission</h5>
-                <p class="small text-muted">
-                  To combat violence against elderly persons through rescue
-                  centers, research, education, advocacy, entrepreneurship,
-                  and compassionate caregiving.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Purpose -->
-          <div class="col-md-6">
-            <div class="d-flex">
-              <div class="me-3 fs-3 text-warning">
-                <i class="bi bi-heart"></i>
-              </div>
-              <div>
-                <h5>Our Purpose</h5>
-                <p class="small text-muted">
-                  Advancing Jesus Christ's redemptive mission by providing
-                  refuge and care to elderly persons facing violence.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Expansion -->
-          <div class="col-md-6">
-            <div class="d-flex">
-              <div class="me-3 fs-3 text-warning">
-                <i class="bi bi-globe"></i>
-              </div>
-              <div>
-                <h5>Our Vision</h5>
-                <p class="small text-muted">
-                  Beginning in Kenya and expanding across Africa to protect
-                  vulnerable elderly persons and restore dignity and safety.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- RIGHT IMAGE -->
-      <div class="col-lg-6 text-center mt-5 mt-lg-0">
-        <img src="assets/images/image.jpg" class="img-fluid rounded shadow" alt="About Image">
-      </div>
-
-    </div>
-
+  <!-- MOBILE NAV OVERLAY -->
+  <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    <a href="#about"      class="mobile-link">About</a>
+    <a href="#objectives" class="mobile-link">Our Work</a>
+    <a href="#involve"    class="mobile-link">Get Involved</a>
+    <a href="#vision"     class="mobile-link">Vision</a>
+    <a href="#involve"    class="mobile-link">Support Us</a>
   </div>
-</section>
-<section class="objectives py-5 bg-light">
-  <div class="container">
 
-    <div class="row mb-5">
-      <div class="col-lg-6">
-        <h2 class="text-warning">Our Objectives</h2>
-        <p>
-          OPCF-Africa advances Christ’s redemptive mission by protecting elderly
-          persons at risk of violence and restoring dignity, safety and care.
-        </p>
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__bg-orb hero__bg-orb--1"></div>
+      <div class="hero__bg-orb hero__bg-orb--2"></div>
+      <div class="hero__bg-rule" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="u-label">Older Persons Care Foundation — Africa</span>
+      </div>
+      <h1 class="hero__headline reveal reveal-d2" id="hero-headline">
+        Protecting <em>Dignity.</em><br />
+        Restoring <span class="hero__accent">Hope.</span>
+      </h1>
+      <p class="hero__sub reveal reveal-d3">
+        Standing with Africa's elderly against violence and neglect — building rescue centers, advocating for rights, and partnering with the Church to restore lives.
+      </p>
+      <div class="hero__actions reveal reveal-d4">
+        <a href="#involve" class="btn-primary">Support the Mission</a>
+        <a href="#involve" class="btn-secondary">Become a Partner</a>
       </div>
     </div>
 
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white shadow-sm h-100 rounded text-center">
-          <i class="bi bi-house-heart fs-1 text-warning"></i>
-          <h5 class="mt-3">Rescue Centers</h5>
-          <p class="small text-muted">
-            Establish safe rescue centers that serve as family-like homes for
-            elderly persons facing threats of violence.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white shadow-sm h-100 rounded text-center">
-          <i class="bi bi-book fs-1 text-warning"></i>
-          <h5 class="mt-3">Discipleship Training</h5>
-          <p class="small text-muted">
-            Develop Christ-centered training programs for caregivers and
-            residents focusing on discipleship and service.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white shadow-sm h-100 rounded text-center">
-          <i class="bi bi-bar-chart fs-1 text-warning"></i>
-          <h5 class="mt-3">Research</h5>
-          <p class="small text-muted">
-            Conduct multidisciplinary research to develop culturally relevant
-            solutions addressing violence against elderly persons.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3">
-        <div class="p-4 bg-white shadow-sm h-100 rounded text-center">
-          <i class="bi bi-megaphone fs-1 text-warning"></i>
-          <h5 class="mt-3">Advocacy</h5>
-          <p class="small text-muted">
-            Advocate for the dignity and rights of elderly persons through
-            publications, digital media, and public engagement.
-          </p>
-        </div>
-      </div>
-
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
     </div>
+  </section>
 
+  <!-- ============================================================
+       MISSION STATEMENT — Editorial Typography Block
+  ============================================================ -->
+  <section class="mission" aria-labelledby="mission-statement">
+    <div class="mission__grid">
+      <div class="mission__sidebar reveal">
+        <span class="u-label">Our Mission</span>
+        <span class="u-rule"></span>
+        <p>Founded in Kenya, OPCF-Africa exists to serve the most vulnerable among us — the elderly who have been forgotten, abused, or abandoned.</p>
+        <p>We act where the world looks away.</p>
+      </div>
+      <div>
+        <blockquote class="mission__statement reveal reveal-d2" id="mission-statement">
+          To <strong>combat violence</strong> against elderly persons in Africa — establishing rescue centers, conducting research, <em>advocating for their dignity and rights</em>, and partnering with churches and institutions to build a future where the aged are honored.
+        </blockquote>
+        <div class="mission__vision reveal reveal-d3">
+          <div class="mission__vision-item">
+            <h3>Our Purpose</h3>
+            <p>To mobilize the Church and civil society to protect and uplift elderly persons across Africa through compassionate, faith-driven intervention.</p>
+          </div>
+          <div class="mission__vision-item">
+            <h3>Our Vision</h3>
+            <p>A continent where every elderly person lives in dignity, safety, and belonging — beginning in Kenya, expanding across Africa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="section section--about" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__left">
+          <span class="u-label reveal">Who We Are</span>
+          <span class="u-rule reveal reveal-d1"></span>
+          <h2 class="reveal reveal-d2" id="about-heading">
+            A Foundation<br />Built on<br /><em>Compassion</em>
+          </h2>
+        </div>
+        <div class="about__right">
+          <p class="about__lead reveal reveal-d2">
+            OPCF-Africa is a Christian humanitarian organization committed to the protection, care, and restoration of elderly persons across Africa. We exist at the intersection of faith, justice, and service.
+          </p>
+          <p class="reveal reveal-d3">
+            Violence against the elderly — physical, emotional, economic, and spiritual — remains one of Africa's most neglected crises. Millions of elderly men and women face abandonment, exploitation, and abuse in silence. We refuse to look away.
+          </p>
+          <p class="reveal reveal-d3">
+            Rooted in the biblical call to honor and protect the vulnerable, we partner with churches, academic institutions, and civil society organizations to establish rescue centers, train caregivers, conduct critical research, and advocate for lasting systemic change.
+          </p>
+          <p class="reveal reveal-d4">
+            Beginning in Kenya, we are building a movement — one community, one church, one rescued life at a time — across the entire African continent.
+          </p>
+
+          <div class="about__stats reveal reveal-d4">
+            <div class="about__stat">
+              <div class="about__stat-num">54</div>
+              <div class="about__stat-label">Nations in Our Vision</div>
+            </div>
+            <div class="about__stat">
+              <div class="about__stat-num">6+</div>
+              <div class="about__stat-label">Partner Organizations</div>
+            </div>
+            <div class="about__stat">
+              <div class="about__stat-num">1</div>
+              <div class="about__stat-label">Unwavering Commitment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OBJECTIVES
+  ============================================================ -->
+  <section class="section section--objectives" id="objectives" aria-labelledby="objectives-heading">
+    <div class="container">
+      <div class="objectives__header">
+        <span class="u-label reveal">What We Do</span>
+        <h2 class="reveal reveal-d2" id="objectives-heading">
+          Four Pillars of<br />Transformative Action
+        </h2>
+      </div>
+
+      <div class="objectives__grid" role="list">
+        <article class="objective reveal" role="listitem">
+          <div class="objective__num" aria-hidden="true">01</div>
+          <span class="objective__accent" aria-hidden="true"></span>
+          <h3>Rescue Centers</h3>
+          <p>Establishing safe havens across Africa where elderly persons who have experienced violence, abandonment, or exploitation can find refuge, care, and restoration.</p>
+        </article>
+
+        <article class="objective reveal reveal-d1" role="listitem">
+          <div class="objective__num" aria-hidden="true">02</div>
+          <span class="objective__accent" aria-hidden="true"></span>
+          <h3>Discipleship &amp; Training</h3>
+          <p>Providing education, discipleship formation, and entrepreneurial skills — empowering elderly persons to live with purpose, dignity, and economic sustainability.</p>
+        </article>
+
+        <article class="objective reveal reveal-d2" role="listitem">
+          <div class="objective__num" aria-hidden="true">03</div>
+          <span class="objective__accent" aria-hidden="true"></span>
+          <h3>Research &amp; Documentation</h3>
+          <p>Conducting rigorous research on the scope of violence against the elderly in Africa to inform evidence-based policy, church engagement, and community intervention.</p>
+        </article>
+
+        <article class="objective reveal reveal-d3" role="listitem">
+          <div class="objective__num" aria-hidden="true">04</div>
+          <span class="objective__accent" aria-hidden="true"></span>
+          <h3>Advocacy &amp; Rights</h3>
+          <p>Championing systemic change through policy advocacy, public education, and institutional partnerships that enshrine the dignity and rights of elderly Africans.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SCRIPTURE BAND
+  ============================================================ -->
+  <div class="quote-band" role="complementary">
+    <p class="quote-band__text">"Rise in the presence of the aged, show respect for the elderly and revere your God."</p>
+    <p class="quote-band__ref">Leviticus 19:32</p>
   </div>
-</section>
-<section id="get-involved" class="py-5 bg-warning text-dark">
-  <div class="container">
 
-    <!-- Section Header -->
-    <div class="row mb-4 text-center">
-      <div class="col-lg-8 mx-auto">
-        <h2 class="fw-bold">Get Involved</h2>
-        <p class="lead">
-          Support OPCF-Africa’s mission to protect elderly persons at risk of violence.  
-          There are multiple ways you can contribute or partner with us.
-        </p>
-      </div>
-    </div>
+  <!-- ============================================================
+       GET INVOLVED
+  ============================================================ -->
+  <section class="section section--involve" id="involve" aria-labelledby="involve-heading">
+    <div class="container">
+      <span class="u-label reveal">Get Involved</span>
+      <span class="u-rule reveal reveal-d1"></span>
+      <h2 class="involve__heading reveal reveal-d2" id="involve-heading">
+        Join the Movement.<br />
+        <em>Change a Life.</em>
+      </h2>
 
-    <!-- Call to Action Cards -->
-    <div class="row g-4">
-
-      <!-- Partnerships -->
-      <div class="col-md-6">
-        <div class="p-4 bg-white rounded shadow h-100">
-          <h4 class="text-warning mb-3">Partnerships</h4>
-          <p>
-            OPCF-Africa seeks to collaborate with organizations committed to the welfare of elderly persons:
-          </p>
-          <ul class="list-unstyled">
+      <div class="involve__grid">
+        <!-- Partnerships -->
+        <div class="involve__card reveal">
+          <div class="involve__card-top">
+            <span class="u-label">Partnerships</span>
+            <div class="involve__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+          </div>
+          <h3>Partner With Us</h3>
+          <p>We partner with churches, academic institutions, Christian organizations, and civil society groups who share our commitment to dignifying elderly Africans. Together, we go further.</p>
+          <p class="involve__partner-label">Current Partners &amp; Collaborators</p>
+          <ul class="partner-list" aria-label="Current partners">
             <li>Society of Christian Scholars</li>
-            <li>ACTEA</li>
+            <li>ACTEA (Accrediting Council for Theological Education in Africa)</li>
             <li>Lausanne Movement</li>
             <li>Anglican Church of Kenya</li>
             <li>African Inland Church (Kenya)</li>
             <li>Pwani University</li>
           </ul>
+          <a href="mailto:partnerships@opcf-africa.org" class="btn-secondary">Explore Partnership</a>
+        </div>
+
+        <!-- Donations -->
+        <div class="involve__card involve__card--donate reveal reveal-d2">
+          <div class="involve__card-top">
+            <span class="u-label">Funding &amp; Donations</span>
+            <div class="involve__card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+          </div>
+          <h3>Fund the Work</h3>
+          <p>Your financial gift directly supports rescue center operations, research initiatives, caregiver training, and advocacy work across Africa. Every contribution dignifies a life.</p>
+          <p>We are a faith-driven, non-profit organization. Donations are used transparently and purposefully to advance our mission with integrity and accountability.</p>
+          <div class="involve__donate-actions">
+            <a href="mailto:donate@opcf-africa.org" class="btn-primary">Make a Donation</a>
+            <a href="mailto:info@opcf-africa.org" class="btn-outline">Request Financial Report</a>
+          </div>
         </div>
       </div>
-
-      <!-- Funding / Donations -->
-      <div class="col-md-6">
-        <div class="p-4 bg-white rounded shadow h-100">
-          <h4 class="text-warning mb-3">Funding & Donations</h4>
-          <p>
-            OPCF-Africa sustains its work through a combination of:
-          </p>
-          <ul class="list-unstyled">
-            <li>Agribusiness income</li>
-            <li>Donations from individuals and organizations</li>
-            <li>Grants from supporting partners</li>
-          </ul>
-          <p class="mt-3">
-            <a href="#contact" class="btn btn-dark">Donate / Partner</a>
-          </p>
-        </div>
-      </div>
-
     </div>
+  </section>
 
-  </div>
-</section>
-<!-- contact us section -->
-<!-- Contact Section with Form -->
-<section id="contact" class="contact py-5 bg-light">
-  <div class="container">
-    <div class="row justify-content-center">
-      
-      <div class="col-lg-8">
-        <h2 class="text-warning mb-4 text-center">Contact Us</h2>
-        <p class="text-center mb-5">
-          We welcome your inquiries, feedback, or interest in supporting our mission. Please fill out the form below and we will get back to you.
+  <!-- ============================================================
+       VISION / EXPANSION
+  ============================================================ -->
+  <section class="expansion" id="vision" aria-labelledby="vision-heading">
+    <div class="expansion__bg" aria-hidden="true"></div>
+
+    <!-- Africa SVG silhouette -->
+    <svg class="expansion__map" viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M120,10 L180,8 L220,30 L240,70 L250,120 L245,160 L260,200 L255,240 L240,280 L210,330 L180,370 L150,375 L120,355 L90,310 L70,260 L60,210 L55,160 L65,110 L75,70 L90,35 Z" fill="currentColor"/>
+      <path d="M50,120 L65,110 L55,160 Z" fill="currentColor"/>
+      <path d="M245,160 L260,165 L255,195 L245,190 Z" fill="currentColor"/>
+    </svg>
+
+    <div class="container">
+      <div class="expansion__content">
+        <span class="u-label reveal">Our Vision</span>
+        <h2 class="expansion__headline reveal reveal-d2" id="vision-heading">
+          Starting in Kenya.<br />
+          <em>Reaching All of Africa.</em>
+        </h2>
+        <p class="expansion__body reveal reveal-d3">
+          What begins in Kenya is a seed for a continent. OPCF-Africa is building a scalable model for protecting elderly persons — designed to be replicated across every region of Africa through local church partnerships, trained advocates, and community rescue centers.
         </p>
+        <p class="expansion__body reveal reveal-d3">
+          We envision a networked movement across all 54 African nations — where no elderly person faces violence, poverty, or abandonment alone.
+        </p>
+        <div class="expansion__path reveal reveal-d4" role="list" aria-label="Expansion path">
+          <div class="expansion__node expansion__node--active" role="listitem">Kenya</div>
+          <span class="expansion__arrow" aria-hidden="true">→</span>
+          <div class="expansion__node expansion__node--future" role="listitem">East Africa</div>
+          <span class="expansion__arrow" aria-hidden="true">→</span>
+          <div class="expansion__node expansion__node--future" role="listitem">Sub-Saharan Africa</div>
+          <span class="expansion__arrow" aria-hidden="true">→</span>
+          <div class="expansion__node expansion__node--future" role="listitem">All Africa</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control border-dark" id="name" placeholder="Your Name" required>
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <p class="footer__brand-name">OPCF<span>-Africa</span></p>
+          <span class="u-label" style="font-size:0.58rem;">Older Persons Care Foundation</span>
+          <p class="footer__tagline">
+            A faith-driven humanitarian organization committed to combating violence against elderly persons, establishing rescue centers, and advocating for dignity across Africa.
+          </p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter / X">𝕏</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">ig</a>
           </div>
+        </div>
 
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control border-dark" id="email" placeholder="Your Email" required>
-          </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About OPCF-Africa</a></li>
+            <li><a href="#objectives">Our Work</a></li>
+            <li><a href="#involve">Get Involved</a></li>
+            <li><a href="#vision">Vision &amp; Expansion</a></li>
+          </ul>
+        </div>
 
-          <div class="mb-3">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" class="form-control border-dark" id="subject" placeholder="Subject" required>
-          </div>
+        <div class="footer__col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="mailto:donate@opcf-africa.org">Make a Donation</a></li>
+            <li><a href="mailto:partnerships@opcf-africa.org">Become a Partner</a></li>
+            <li><a href="mailto:volunteer@opcf-africa.org">Volunteer</a></li>
+            <li><a href="mailto:info@opcf-africa.org">Request Info</a></li>
+          </ul>
+        </div>
 
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control border-dark" id="message" rows="5" placeholder="Your message..." required></textarea>
-          </div>
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-warning text-dark">Send Message</button>
-          </div>
-        </form>
-
+        <div class="footer__col footer__contact">
+          <h4>Contact</h4>
+          <p><strong>General Inquiries</strong>info@opcf-africa.org</p>
+          <p><strong>Partnerships</strong>partnerships@opcf-africa.org</p>
+          <p><strong>Location</strong>Nairobi, Kenya<br />Serving across Africa</p>
+        </div>
       </div>
 
+      <div class="footer__bottom">
+        <p>© 2025 Older Persons Care Foundation – Africa. All rights reserved.</p>
+        <p>Rooted in faith. Committed to dignity. Expanding across Africa.</p>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- footer section -->
-<footer class="site-footer bg-dark text-light pt-5 pb-4">
-  <div class="container">
-  
-  <div class="row">
-  
-  <div class="col-lg-4 mb-4">
-  <h5 class="text-warning">About OPCF-Africa</h5>
-  <p>
-  Older Persons Care Foundation-Africa (OPCF-Africa) is a Community Based
-  Organization committed to protecting elderly persons threatened by violence
-  through compassionate care, advocacy, and faith-driven service.
-  </p>
-  </div>
-  
-  <div class="col-lg-2">
-  <h6 class="text-warning">Links</h6>
-  <ul class="list-unstyled">
-    <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
-  <li><a href="#about" class="text-light text-decoration-none">About</a></li>
-  <!-- <li><a href="#abou" class="text-light text-decoration-none">Objectives</a></li> -->
-  <li><a href="#contact" class="text-light text-decoration-none">Contact Us</a></li>
-  <li><a href="#get-involved" class="text-light text-decoration-none">Support Us</a></li>
-  </ul>
-  </div>
-  
-  <div class="col-lg-3">
-  <h6 class="text-warning">Contacts</h6>
-  <p>Kenya</p>
-  <p>Email: info@opcf-africa.org</p>
-  <p>Phone: +254 XXX XXX XXX</p>
-  </div>
-  
-  <div class="col-lg-3">
-  <h6 class="text-warning">Important Notice</h6>
-  <p class="small">
-  OPCF-Africa exclusively supports elderly persons threatened by violence.
-  The organization does not operate as a rehabilitation facility for other
-  groups such as individuals identifying as LGBTQ or those struggling with
-  alcohol or drug addiction.
-  </p>
-  </div>
-  
-  </div>
-  
-  <hr class="border-secondary">
-  
-  <div class="text-center small">
-  © <script>document.write(new Date().getFullYear())</script> OPCF-Africa.
-  All Rights Reserved.
-  </div>
-  
-  </div>
   </footer>
-</main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="script.js"></script>
+  <!-- ============================================================
+       DARK / LIGHT MODE TOGGLE (floating)
+  ============================================================ -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+    <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">
+      <!-- Moon -->
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </span>
+    <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">
+      <!-- Sun -->
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </span>
+    <span class="theme-toggle__label">Light Mode</span>
+  </button>
+
+  <script src="script.js"></script>
 </body>
-    </html>
-
-    
+</html>
