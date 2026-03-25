@@ -552,8 +552,13 @@ a {
   height: 1px;
   background: var(--accent-green);
 }
-
+.hero__main {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
 .hero__headline {
+  flex: 1;
   font-family: var(--ff-display);
   font-size: clamp(3.2rem, 8vw, 8rem);
   font-weight: 300;
@@ -575,8 +580,9 @@ a {
   font-size: 1.05rem;
   font-weight: 300;
   color: var(--text-secondary);
-  max-width: 480px;
+  max-width: 400px;
   line-height: 1.8;
+  flex: 1;
 }
 
 .hero__actions {
@@ -1361,7 +1367,9 @@ a {
   .nav__hamburger {
     display: flex;
   }
-
+  .hero__main {
+    flex-direction: column;
+  }
   .hero {
     padding: 0 1.5rem 4.5rem;
   }
